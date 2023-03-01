@@ -16,7 +16,7 @@ body{
     cursor: pointer;
     width: 40px;
     height: 25px;
-
+    visibility: hidden;
     &_line{
 
         height: 3px;
@@ -24,7 +24,6 @@ body{
         background-color: #292D32;
         position: absolute;
         top: 0px;
-        //visibility: hidden;
     }
     &_line::after{
         position: absolute;
@@ -59,7 +58,6 @@ body{
     height: 1198px;
     background-color: white;
     padding-top: 36px;
-    transition: all 1s;
     left: 0px;
  
 
@@ -202,12 +200,16 @@ body{
     }
 
 }
-.burger:hover .menu{
+.burger:hover .customers{
     margin-left: 0px;
 }
 @media (max-width: 1612px) {
     .menu{
         margin-left: -308px;
+    }
+    .burger{
+        visibility:visible;
+        transition: all 2s;
     }
 
 }
@@ -391,14 +393,12 @@ body{
                 position: absolute;
                 top: 278px;
                 left: 377px;
-                transition: all 1s;
             }
             @media (max-width: 1612px) {
                 &_filter::before{
                     transition: all 0.15s;
                     position: absolute;
                     left: 72px;
-                    transition: all 1s;
                     
                 }
             }

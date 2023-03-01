@@ -213,6 +213,7 @@ body{
     }
 
 }
+
 #Customers{
     filter: brightness(0.6);
 }
@@ -536,6 +537,22 @@ body{
 
        
     } 
+
+    @media (max-width: 900px) {
+
+        &_block{
+            width: 367px;
+            margin-left: 10px;
+
+            &_head{
+                padding: 0 9px 0 11px;
+
+                &_search{
+                    width: 141px;
+                }
+            }
+        }
+    }
 
 
 }

@@ -477,4 +477,16 @@ body {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #B5B7C0;
+}
+@media (max-width: 900px) {
+  .customers_block {
+    width: 367px;
+    margin-left: 10px;
+  }
+  .customers_block_head {
+    padding: 0 9px 0 11px;
+  }
+  .customers_block_head_search {
+    width: 141px;
+  }
 }/*# sourceMappingURL=style.css.map */

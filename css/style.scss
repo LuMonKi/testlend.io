@@ -9,6 +9,16 @@ body{
     flex-direction: row;
     
 }
+@media (max-width: 900px) {
+    .header{
+        justify-content: center;
+    }
+}
+@media (max-width: 1380px) {
+    .header{
+        justify-content: center;
+    }
+}
 .burger{
     position: absolute;
     top: 15px;
@@ -204,23 +214,45 @@ body{
     margin-left: 0px;
 }
 @media (max-width: 1612px) {
-    .menu{
-        margin-left: -308px;
-    }
-    .burger{
-        visibility:visible;
-        transition: all 2s;
-    }
-    .carouselExampleControls{
+    .carousel{
+
+        &-control-prev{
+            &-icon{
+                filter: contrast();
+            }
+        }
 
         
     }
 
 }
+@media (max-width: 1380px) {
+    .menu{
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+    .menu_button_block_logo{
+        visibility: hidden;
+    }
+     .burger{
+        visibility:visible;
+        transition: all 2s;
+    }
+}
 
 .carousel{
+    &-control-prev{
+        &-icon{
+            background-color: #00B087;
+            filter: brightness(1.7);
+        }
+    }
 
    
+}
+.carousel-control-next-icon{
+    background-color: #00B087;
 }
 
 #Customers{
@@ -228,7 +260,7 @@ body{
 }
 
 .customers{
-    height: 812px;
+    
 
     &_hello{
         height: 128px;
@@ -250,7 +282,7 @@ body{
 
     &_block{
         height: 812px;
-        width: 968px;
+        width: 100%;
         background-color: white;
         box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.753);
         border-radius: 30px;
@@ -393,25 +425,33 @@ body{
                 }
 
             }
-            &_filter::before{
+            // &_filter::before{
                 
-                content: "";
-                width: 968px;
-                height: 0.5px;
-                border-bottom: solid #EEEEEE;
-                border-width: 1px 1px 1px 1px;
-                position: absolute;
-                top: 278px;
-                left: 377px;
-            }
-            @media (max-width: 1612px) {
-                &_filter::before{
-                    transition: all 0.15s;
-                    position: absolute;
-                    left: 72px;
+            //     content: "";
+            //     width: 968px;
+            //     height: 0.5px;
+            //     border-bottom: solid #EEEEEE;
+            //     border-width: 1px 1px 1px 1px;
+            //     position: absolute;
+            //     top: 278px;
+            //     left: 377px;
+            // }
+            // @media (max-width: 1612px) {
+            //     &_filter::before{
+            //         transition: all 0.15s;
+            //         position: absolute;
+            //         left: 72px;
                     
-                }
-            }
+            //     }
+            // }
+            // @media (max-width: 900px) {
+            //     &_filter::before{
+            //         transition: all 0.15s;
+            //         position: absolute;
+            //         left: 6px;
+            //         width: 370px;
+            //     }
+            // }
         }       
         &_section_name{
             display: flex;
@@ -548,10 +588,13 @@ body{
     } 
 
     @media (max-width: 900px) {
+        .header{
+            justify-content: center;
+        }
 
         &_block{
             width: 367px;
-            margin-left: 10px;
+            margin: 0;
 
             &_head{
                 padding: 0 9px 0 11px;
@@ -560,8 +603,26 @@ body{
                     width: 141px;
                 }
             }
+
+            &_data{
+                width: 367px;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+        }
+    }
+    @media (max-width: 1380px) {
+        &_block{
+            margin: 0;
         }
     }
 
-
+}
+@media (max-width: 1380px) {
+    .customers{
+        
+        &_hello{
+            padding: 0;
+        }
+    }
 }

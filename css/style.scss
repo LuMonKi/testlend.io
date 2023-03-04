@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .header{
         justify-content: center;
     }
@@ -282,7 +282,7 @@ body{
 
     &_block{
         height: 812px;
-        width: 100%;
+        max-width: 968px;
         background-color: white;
         box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.753);
         border-radius: 30px;
@@ -360,10 +360,169 @@ body{
         
             }
         }
-
+        &_carousel{
+            &_info{
+                display: flex;
+                padding: 0 36px 0 41px;
+        
+                    &_section{
+        
+                        
+                        &_status{
+                            width: 80px;
+                            height: 29px;
+        
+                            &_text{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                width: 80px;
+                                height: 29px;
+        
+                            }
+        
+                            #statusButtonActive{
+                                background: rgba(22, 192, 152, 0.38);
+                                border: 1px solid #00B087;
+                                border-radius: 4px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 21px;
+                                letter-spacing: -0.01em;
+                                color: #008767;
+                            }
+        
+                            #statusButtonInactive{
+                                background: #FFC5C5;
+                                border: 1px solid #DF0404;
+                                border-radius: 4px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 21px;
+                                letter-spacing: -0.01em;
+                                color: #DF0404;
+                            }
+                        }
+                    &_filter{
+                        height: 28px;
+        
+                        &_names{
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            letter-spacing: -0.01em;
+                            color: #B5B7C0;
+                            width: 100%;
+        
+                        }
+        
+                    }
+                    // &_filter::before{
+                        
+                    //     content: "";
+                    //     width: 968px;
+                    //     height: 0.5px;
+                    //     border-bottom: solid #EEEEEE;
+                    //     border-width: 1px 1px 1px 1px;
+                    //     position: absolute;
+                    //     top: 278px;
+                    //     left: 377px;
+                    // }
+                    // @media (max-width: 1612px) {
+                    //     &_filter::before{
+                    //         transition: all 0.15s;
+                    //         position: absolute;
+                    //         left: 72px;
+                            
+                    //     }
+                    // }
+                    // @media (max-width: 1000px) {
+                    //     &_filter::before{
+                    //         transition: all 0.15s;
+                    //         position: absolute;
+                    //         left: 6px;
+                    //         width: 370px;
+                    //     }
+                    // }
+                }    
+                
+                &_section_name{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    margin-right: 111px;
+                    width: 100%;
+                }
+                &_section_company{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    margin-right: 61px;
+                    width: 100%;
+                }
+                &_section_number{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    margin-right: 120px;
+                    width: 180px;
+                }
+                &_section_emal{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    width: 180px;
+                    
+                }
+                &_section_country{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    width: 100%;
+                    margin-right: 67px;
+                }
+                &_section_status{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #EEEEEE;
+                    height: 69px;
+                    justify-content: center;
+                    width: 100%;
+                }
+                #statusSection{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                &_section_text{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: -0.01em;
+                    color: #292D32;
+        
+                }
+                }
+        }
         &_info{
         display: flex;
-        padding: 0 36px 0 41px;
+        
 
             &_section{
 
@@ -425,33 +584,6 @@ body{
                 }
 
             }
-            // &_filter::before{
-                
-            //     content: "";
-            //     width: 968px;
-            //     height: 0.5px;
-            //     border-bottom: solid #EEEEEE;
-            //     border-width: 1px 1px 1px 1px;
-            //     position: absolute;
-            //     top: 278px;
-            //     left: 377px;
-            // }
-            // @media (max-width: 1612px) {
-            //     &_filter::before{
-            //         transition: all 0.15s;
-            //         position: absolute;
-            //         left: 72px;
-                    
-            //     }
-            // }
-            // @media (max-width: 900px) {
-            //     &_filter::before{
-            //         transition: all 0.15s;
-            //         position: absolute;
-            //         left: 6px;
-            //         width: 370px;
-            //     }
-            // }
         }    
         
         &_section_name{
@@ -460,7 +592,7 @@ body{
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
             margin-right: 111px;
-            width: 100%;
+            width: 180px;
         }
         &_section_company{
             display: flex;
@@ -475,15 +607,14 @@ body{
             align-items: center;
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
-            margin-right: 120px;
-            width: 180px;
+            width: 170px;
         }
         &_section_emal{
             display: flex;
             align-items: center;
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
-            width: 180px;
+            width: 190px;
             
         }
         &_section_country{
@@ -500,7 +631,6 @@ body{
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
             justify-content: center;
-            width: 100%;
         }
         #statusSection{
             display: flex;
@@ -519,10 +649,66 @@ body{
 
         }
         }
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
+            &_carousel{
+                      
+                &_info{
+                    padding: 0 20px 0 20px;
+    
+                    &_section_name{
+                        justify-content: center;
+                        max-width: 150px;
+                        margin: 0;
+    
+                    }
+                    &_section_company{
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_number{
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_emal{
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_country{
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_status{
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 180px;
+                        margin: 0;
+                    }
+                    &_section_filter{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &_section{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+    
+                }
+            }
             &_info{
-                padding: 0 20px 0 20px;
-
+                visibility: hidden;
+                width: 0;
                 &_section_name{
                     justify-content: center;
                     max-width: 150px;
@@ -554,9 +740,6 @@ body{
                     min-width: 180px;
                     margin: 0;
                 }
-                #statusSection{
-                    
-                }
                 &_section_text{
                     display: flex;
                     align-items: center;
@@ -574,10 +757,21 @@ body{
                     align-items: center;
                     flex-direction: column;
                 }
-
             }
+            
         }
-       
+        @media (min-width: 1000px){
+            &_carousel_info{
+                min-width: 180px;
+                
+            }
+
+            #carouselExampleControls{
+                visibility: hidden;
+                max-width: 0;
+            }
+
+        }
         &_data{
         display: flex;
         flex-direction: row;
@@ -641,13 +835,26 @@ body{
         }
         
         }
+        &_info{
+
+        }
 
        
     } 
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
         .header{
             justify-content: center;
+        }
+        
+        #emalSection{
+            width: 0;
+        }
+        #countrySection{
+            width: 0;
+        }
+        #numberSection{
+            width: 0;
         }
 
         &_block{
@@ -668,6 +875,7 @@ body{
                 justify-content: space-evenly;
             }
         }
+        
     }
     @media (max-width: 1380px) {
         &_block{

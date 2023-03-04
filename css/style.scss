@@ -228,8 +228,8 @@ body{
 }
 @media (max-width: 1380px) {
     .menu{
-        height: 0px;
-        width: 0px;
+        height: 0;
+        width: 0;
         visibility: hidden;
     }
     .menu_button_block_logo{
@@ -365,50 +365,50 @@ body{
         display: flex;
         padding: 0 36px 0 41px;
 
-        &_section{
+            &_section{
 
-            
-            &_status{
-                width: 80px;
-                height: 29px;
-
-                &_text{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
+                
+                &_status{
                     width: 80px;
                     height: 29px;
 
-                }
+                    &_text{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        width: 80px;
+                        height: 29px;
 
-                #statusButtonActive{
-                    background: rgba(22, 192, 152, 0.38);
-                    border: 1px solid #00B087;
-                    border-radius: 4px;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 21px;
-                    letter-spacing: -0.01em;
-                    color: #008767;
-                }
+                    }
 
-                #statusButtonInactive{
-                    background: #FFC5C5;
-                    border: 1px solid #DF0404;
-                    border-radius: 4px;
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 21px;
-                    letter-spacing: -0.01em;
-                    color: #DF0404;
+                    #statusButtonActive{
+                        background: rgba(22, 192, 152, 0.38);
+                        border: 1px solid #00B087;
+                        border-radius: 4px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: -0.01em;
+                        color: #008767;
+                    }
+
+                    #statusButtonInactive{
+                        background: #FFC5C5;
+                        border: 1px solid #DF0404;
+                        border-radius: 4px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: -0.01em;
+                        color: #DF0404;
+                    }
                 }
-            }
             &_filter{
                 height: 28px;
 
@@ -452,7 +452,8 @@ body{
             //         width: 370px;
             //     }
             // }
-        }       
+        }    
+        
         &_section_name{
             display: flex;
             align-items: center;
@@ -475,14 +476,14 @@ body{
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
             margin-right: 120px;
-            width: 100%;
+            width: 180px;
         }
         &_section_emal{
             display: flex;
             align-items: center;
             border-bottom: 1px solid #EEEEEE;
             height: 69px;
-            width: 204px;
+            width: 180px;
             
         }
         &_section_country{
@@ -517,7 +518,64 @@ body{
             color: #292D32;
 
         }
+        }
+        @media (max-width: 900px) {
+            &_info{
+                padding: 0 20px 0 20px;
 
+                &_section_name{
+                    justify-content: center;
+                    max-width: 150px;
+                    margin: 0;
+
+                }
+                &_section_company{
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                &_section_number{
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                &_section_emal{
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                &_section_country{
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                &_section_status{
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                #statusSection{
+                    
+                }
+                &_section_text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 180px;
+                    margin: 0;
+                }
+                &_section_filter{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_section{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+            }
         }
        
         &_data{
@@ -616,7 +674,6 @@ body{
             margin: 0;
         }
     }
-
 }
 @media (max-width: 1380px) {
     .customers{

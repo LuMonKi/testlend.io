@@ -518,15 +518,13 @@ body{
                     color: #292D32;
         
                 }
-                }
+            }
         }
         &_info{
         display: flex;
         
+            &_section{  
 
-            &_section{
-
-                
                 &_status{
                     width: 80px;
                     height: 29px;
@@ -568,7 +566,8 @@ body{
                         color: #DF0404;
                     }
                 }
-            &_filter{
+
+                &_filter{
                 height: 28px;
 
                 &_names{
@@ -650,102 +649,69 @@ body{
         }
         }
         @media (max-width: 1000px) {
+            #blockiform{
+                visibility: hidden;
+                position: absolute;
+                left: -1000px;
+            }
             &_carousel{
-                      
                 &_info{
                     padding: 0 20px 0 20px;
-    
                     &_section_name{
-                        justify-content: center;
+                        display: flex;
+                        
                         max-width: 150px;
                         margin: 0;
     
                     }
-                    &_section_company{
-                        justify-content: center;
-                        min-width: 180px;
-                        margin: 0;
-                    }
-                    &_section_number{
-                        justify-content: center;
-                        min-width: 180px;
-                        margin: 0;
-                    }
-                    &_section_emal{
-                        justify-content: center;
-                        min-width: 180px;
-                        margin: 0;
-                    }
-                    &_section_country{
-                        justify-content: center;
-                        min-width: 180px;
-                        margin: 0;
-                    }
-                    &_section_status{
-                        justify-content: center;
-                        min-width: 180px;
-                        margin: 0;
-                    }
                     &_section_text{
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        
                         min-width: 180px;
                         margin: 0;
-                    }
-                    &_section_filter{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                     }
                     &_section{
                         display: flex;
                         align-items: center;
+                        justify-content: center;
                         flex-direction: column;
                     }
-    
                 }
             }
             &_info{
-                visibility: hidden;
-                width: 0;
-                &_section_name{
-                    justify-content: center;
-                    max-width: 150px;
-                    margin: 0;
-
-                }
+                    padding: 0 20px 0 20px;
+                    
                 &_section_company{
-                    justify-content: center;
+                    
                     min-width: 180px;
                     margin: 0;
+                    
                 }
                 &_section_number{
-                    justify-content: center;
+                    
                     min-width: 180px;
                     margin: 0;
                 }
                 &_section_emal{
-                    justify-content: center;
-                    min-width: 180px;
+                    
+                    max-width: 180px;
                     margin: 0;
                 }
                 &_section_country{
-                    justify-content: center;
-                    min-width: 180px;
+                    
+                    max-width: 180px;
                     margin: 0;
                 }
                 &_section_status{
-                    justify-content: center;
+                    
                     min-width: 180px;
                     margin: 0;
                 }
                 &_section_text{
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                     min-width: 180px;
-                    margin: 0;
                 }
                 &_section_filter{
                     display: flex;
@@ -755,9 +721,12 @@ body{
                 &_section{
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     flex-direction: column;
                 }
             }
+
+            
             
         }
         @media (min-width: 1000px){
@@ -835,9 +804,6 @@ body{
         }
         
         }
-        &_info{
-
-        }
 
        
     } 
@@ -845,16 +811,6 @@ body{
     @media (max-width: 1000px) {
         .header{
             justify-content: center;
-        }
-        
-        #emalSection{
-            width: 0;
-        }
-        #countrySection{
-            width: 0;
-        }
-        #numberSection{
-            width: 0;
         }
 
         &_block{

@@ -549,96 +549,58 @@ body {
   color: #292D32;
 }
 @media (max-width: 1000px) {
+  .customers_block #blockiform {
+    visibility: hidden;
+    position: absolute;
+    left: -1000px;
+  }
   .customers_block_carousel_info {
     padding: 0 20px 0 20px;
   }
   .customers_block_carousel_info_section_name {
-    justify-content: center;
+    display: flex;
     max-width: 150px;
-    margin: 0;
-  }
-  .customers_block_carousel_info_section_company {
-    justify-content: center;
-    min-width: 180px;
-    margin: 0;
-  }
-  .customers_block_carousel_info_section_number {
-    justify-content: center;
-    min-width: 180px;
-    margin: 0;
-  }
-  .customers_block_carousel_info_section_emal {
-    justify-content: center;
-    min-width: 180px;
-    margin: 0;
-  }
-  .customers_block_carousel_info_section_country {
-    justify-content: center;
-    min-width: 180px;
-    margin: 0;
-  }
-  .customers_block_carousel_info_section_status {
-    justify-content: center;
-    min-width: 180px;
     margin: 0;
   }
   .customers_block_carousel_info_section_text {
     display: flex;
     align-items: center;
-    justify-content: center;
     min-width: 180px;
     margin: 0;
-  }
-  .customers_block_carousel_info_section_filter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .customers_block_carousel_info_section {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   .customers_block_info {
-    visibility: hidden;
-    width: 0;
-  }
-  .customers_block_info_section_name {
-    justify-content: center;
-    max-width: 150px;
-    margin: 0;
+    padding: 0 20px 0 20px;
   }
   .customers_block_info_section_company {
-    justify-content: center;
     min-width: 180px;
     margin: 0;
   }
   .customers_block_info_section_number {
-    justify-content: center;
     min-width: 180px;
     margin: 0;
   }
   .customers_block_info_section_emal {
-    justify-content: center;
-    min-width: 180px;
+    max-width: 180px;
     margin: 0;
   }
   .customers_block_info_section_country {
-    justify-content: center;
-    min-width: 180px;
+    max-width: 180px;
     margin: 0;
   }
   .customers_block_info_section_status {
-    justify-content: center;
     min-width: 180px;
     margin: 0;
   }
   .customers_block_info_section_text {
     display: flex;
     align-items: center;
-    justify-content: center;
     min-width: 180px;
-    margin: 0;
   }
   .customers_block_info_section_filter {
     display: flex;
@@ -648,6 +610,7 @@ body {
   .customers_block_info_section {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 }
@@ -715,15 +678,6 @@ body {
 @media (max-width: 1000px) {
   .customers .header {
     justify-content: center;
-  }
-  .customers #emalSection {
-    width: 0;
-  }
-  .customers #countrySection {
-    width: 0;
-  }
-  .customers #numberSection {
-    width: 0;
   }
   .customers_block {
     width: 367px;

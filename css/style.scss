@@ -13,20 +13,55 @@ body{
     .header{
         justify-content: center;
     }
+
 }
 @media (max-width: 1380px) {
     .header{
         justify-content: center;
     }
+    .menu{
+        height: 0;
+        visibility: hidden;
+        position: absolute;
+        left: -306px;
+        top: 0;
+    }
+    .menu_button_block_logo{
+        visibility: hidden;
+    }
+    .burger{
+        visibility:visible;
+        position: absolute;
+        width: 40px;
+        height: 25px;
+    }
+    .customers{
+        
+        &_hello{
+            padding: 0;
+        }
+    }
+}
+@media (min-width: 1380px) {
+    .burger{
+        visibility:hidden;
+    }
+    .menu{
+        visibility:visible;
+    }
+    .burger{
+        width: auto;
+        height: auto;
+        position: relative;
+    }
 }
 .burger{
-    position: absolute;
     top: 15px;
-    left: 15px;
+    left: 10px;
     cursor: pointer;
-    width: 40px;
-    height: 25px;
-    visibility: hidden;
+
+
+    
     &_line{
 
         height: 3px;
@@ -52,6 +87,11 @@ body{
         background-color: #292D32;
     }
 }
+.burger input{
+    width: 41px;
+    border: none;
+    
+}
 .burger:active .burger_line::before{
     background-color: #1075f1;
 }
@@ -62,13 +102,14 @@ body{
     background-color: #1075f1;
 }
 
+
 .menu{
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.753);
     max-width: 306px;
     height: 1198px;
     background-color: white;
     padding-top: 36px;
-    left: 0px;
+    transition: all 0.5s;
  
 
     &_logo{
@@ -208,38 +249,18 @@ body{
             }
         }
     }
-
+   
 }
-.burger:hover .customers{
-    margin-left: 0px;
+.burger:hover .menu {
+    left:-10px;
+    transition: all 0.5s;
+    visibility: visible;
 }
-@media (max-width: 1612px) {
-    .carousel{
-
-        &-control-prev{
-            &-icon{
-                filter: contrast();
-            }
-        }
-
-        
-    }
-
+.burger:hover .menu {
+    top: -15px;
 }
-@media (max-width: 1380px) {
-    .menu{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    }
-    .menu_button_block_logo{
-        visibility: hidden;
-    }
-     .burger{
-        visibility:visible;
-        transition: all 2s;
-    }
-}
+
+
 
 .carousel{
     &-control-prev{
@@ -251,9 +272,7 @@ body{
 
    
 }
-.carousel-control-next-icon{
-    background-color: #00B087;
-}
+
 
 #Customers{
     filter: brightness(0.6);
@@ -361,12 +380,12 @@ body{
             }
         }
         &_carousel{
+
             &_info{
                 display: flex;
                 padding: 0 36px 0 41px;
         
                     &_section{
-        
                         
                         &_status{
                             width: 80px;
@@ -382,7 +401,6 @@ body{
                                 height: 29px;
         
                             }
-        
                             #statusButtonActive{
                                 background: rgba(22, 192, 152, 0.38);
                                 border: 1px solid #00B087;
@@ -409,9 +427,12 @@ body{
                                 color: #DF0404;
                             }
                         }
+
                     &_filter{
                         height: 28px;
-        
+                        border-bottom: solid #EEEEEE;
+                        border-width: 1px 1px 1px 1px;
+
                         &_names{
                             font-family: 'Poppins';
                             font-style: normal;
@@ -423,6 +444,8 @@ body{
                             width: 100%;
         
                         }
+
+                        
         
                     }
                     // &_filter::before{
@@ -502,12 +525,6 @@ body{
                     justify-content: center;
                     width: 100%;
                 }
-                #statusSection{
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    width: 100%;
-                }
                 &_section_text{
                     font-family: 'Poppins';
                     font-style: normal;
@@ -539,6 +556,10 @@ body{
                         height: 29px;
 
                     }
+                    &_filter{
+                        border-bottom: solid #EEEEEE;
+                        border-width: 1px 1px 1px 1px;
+                    }
 
                     #statusButtonActive{
                         background: rgba(22, 192, 152, 0.38);
@@ -568,7 +589,12 @@ body{
                 }
 
                 &_filter{
-                height: 28px;
+                    height: 28px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: solid #EEEEEE;
+                    border-width: 1px 1px 1px 1px;
 
                 &_names{
                     font-family: 'Poppins';
@@ -631,12 +657,6 @@ body{
             height: 69px;
             justify-content: center;
         }
-        #statusSection{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-        }
         &_section_text{
             font-family: 'Poppins';
             font-style: normal;
@@ -659,16 +679,14 @@ body{
                     padding: 0 20px 0 20px;
                     &_section_name{
                         display: flex;
-                        
-                        max-width: 150px;
                         margin: 0;
+                        justify-content: center;
     
                     }
                     &_section_text{
                         display: flex;
                         align-items: center;
-                        
-                        min-width: 180px;
+                        justify-content: center;
                         margin: 0;
                     }
                     &_section{
@@ -676,41 +694,48 @@ body{
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
+                        min-width: 150px;
+
+                        &_filter{
+                            width: 100%;
+                            border-bottom: solid #EEEEEE;
+                            border-width: 1px 1px 1px 1px;
+
+                            &_names{
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
                     }
                 }
             }
             &_info{
                     padding: 0 20px 0 20px;
                     
-                &_section_company{
-                    
+                &_section_company{             
                     min-width: 180px;
-                    margin: 0;
-                    
+                    margin: 0;            
                 }
                 &_section_number{
-                    
                     min-width: 180px;
                     margin: 0;
                 }
-                &_section_emal{
-                    
+                &_section_emal{                    
                     max-width: 180px;
                     margin: 0;
                 }
-                &_section_country{
-                    
+                &_section_country{                   
                     max-width: 180px;
                     margin: 0;
                 }
-                &_section_status{
-                    
+                &_section_status{                  
                     min-width: 180px;
                     margin: 0;
                 }
                 &_section_text{
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     min-width: 180px;
                 }
                 &_section_filter{
@@ -723,6 +748,16 @@ body{
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
+                    &_filter{
+                        width: 100%;
+                        border-bottom: solid #EEEEEE;
+                        border-width: 1px 1px 1px 1px;
+
+                        &_names{
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
                 }
             }
 
@@ -733,12 +768,21 @@ body{
             &_carousel_info{
                 min-width: 180px;
                 
+                
             }
+            #statusFilter{
+                display: flex;
+                justify-content: center;
+            }
+
 
             #carouselExampleControls{
                 visibility: hidden;
                 max-width: 0;
             }
+
+
+
 
         }
         &_data{
@@ -803,9 +847,7 @@ body{
             }
         }
         
-        }
-
-       
+        }      
     } 
 
     @media (max-width: 1000px) {
@@ -836,14 +878,6 @@ body{
     @media (max-width: 1380px) {
         &_block{
             margin: 0;
-        }
-    }
-}
-@media (max-width: 1380px) {
-    .customers{
-        
-        &_hello{
-            padding: 0;
         }
     }
 }

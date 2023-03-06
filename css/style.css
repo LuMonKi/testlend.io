@@ -113,6 +113,7 @@ body {
   background-color: white;
   padding-top: 36px;
   transition: all 0.5s;
+  z-index: 2;
 }
 .menu_logo {
   width: 212px;
@@ -668,6 +669,7 @@ body {
   .customers_block #carouselExampleControls {
     visibility: hidden;
     max-width: 0;
+    z-index: 1;
   }
 }
 .customers_block_data {

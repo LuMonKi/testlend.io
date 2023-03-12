@@ -74,6 +74,7 @@ body{
     }
     .menu_button_block_logo{
         visibility: hidden;
+        height: 42px;
     }
     .burger{
         visibility:visible;
@@ -882,8 +883,5 @@ body{
         background-color: #020a14;
         width: 28px;
         border-radius: 4px;
-    }
-    .carousel-control-next-icon ,.carousel-control-prev-icon{
-       
     }
 }

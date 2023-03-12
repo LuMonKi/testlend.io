@@ -74,6 +74,7 @@ body {
   }
   .menu_button_block_logo {
     visibility: hidden;
+    height: 42px;
   }
   .burger {
     visibility: visible;

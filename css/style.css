@@ -715,6 +715,8 @@ body {
 .customers_block_data_pages_button:hover .customers_block_data_pages_button_text {
   transition: all 0.15s;
   color: white;
+  border: 0 !important;
+  outline: none !important;
 }
 .customers_block_data_info_text {
   font-family: "Poppins";

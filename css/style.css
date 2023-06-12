@@ -164,6 +164,10 @@ body {
   margin-top: 19px;
   cursor: pointer;
   padding: 13px 13px 13px 13px;
+  outline: 0;
+  outline-offset: 0;
+  border: 0 !important;
+  outline: none !important;
 }
 .menu_button_block_logo {
   filter: grayscale(100%);

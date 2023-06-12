@@ -226,11 +226,15 @@ body{
     }
 
     &_account{
-        margin-top:620px;
+        margin-top:160%;
         margin-bottom: 76px;
         padding: 0 123px 0 28px;
 
         &_block{
+            &_logo{
+                height: 50px;
+                width: 50px;
+            }
             display: flex;
             &_employee{
                 min-width: 143px;

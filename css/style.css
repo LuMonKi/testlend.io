@@ -211,12 +211,16 @@ body {
   filter: brightness(1.7);
 }
 .menu_account {
-  margin-top: 620px;
+  margin-top: 160%;
   margin-bottom: 76px;
   padding: 0 123px 0 28px;
 }
 .menu_account_block {
   display: flex;
+}
+.menu_account_block_logo {
+  height: 50px;
+  width: 50px;
 }
 .menu_account_block_employee {
   min-width: 143px;
